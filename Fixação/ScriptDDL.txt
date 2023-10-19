@@ -13,7 +13,7 @@
  )*/
  
 /*alter table tb_produtos drop column valor*/
- 
+ /*alter table tb_produtos drop column quantidade */
  /*create table tb_fornecedores(
 	id int primary key auto_increment,
     nome varchar(20)
@@ -43,18 +43,24 @@
     id_cliente int,
     foreign key(id_cliente) references tb_cliente(id)
   )*/
+  
+  /*alter table tb_venda drop column quantidade*/
+  
  /*create table produtos_tem_vendas(
 	id_produtos int not null,
     id_vendas int not null,
     foreign key(id_produtos) references tb_produtos(id),
     foreign key(id_vendas) references tb_venda(id)
  )*/
- 
+  /*alter table produtos_tem_vendas add quantidade int*/
+
  /*create table tb_compra(
 	id int primary key auto_increment,
     valor decimal(8,2),
     quantidade int
  )*/
+ 
+  /*alter table tb_compra drop column quantidade*/
  
  /*create table produtos_tem_compra(
 	id_produtos int not null,
@@ -62,3 +68,5 @@
     foreign key(id_produtos) references tb_produtos(id),
     foreign key(id_compra) references tb_compra(id)
  )*/
+ /*alter table produtos_tem_compra add quantidade int
+	*/

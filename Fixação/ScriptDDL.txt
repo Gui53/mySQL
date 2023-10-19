@@ -1,0 +1,64 @@
+/* create table tb_categorias(
+	id int primary key auto_increment,
+    descricao varchar(30)
+ )*/
+ 
+ /*create table tb_produtos(
+	id int primary key auto_increment,
+    descricao varchar(30),
+    valor decimal(8,2),
+    quantidade int,
+    id_categorias int,
+    foreign key(id_categorias) references tb_categorias(id)
+ )*/
+ 
+/*alter table tb_produtos drop column valor*/
+ 
+ /*create table tb_fornecedores(
+	id int primary key auto_increment,
+    nome varchar(20)
+ )*/
+ 
+ /*create table produtos_tem_fornecedores(
+	id_produtos int not null,
+    id_fornecedores int not null,
+    foreign key(id_produtos) references tb_produtos(id),
+    foreign key(id_fornecedores) references tb_fornecedores(id)
+ )*/
+ 
+ /*alter table produtos_tem_fornecedores add valor decimal(8,2)*/
+ 
+ /*create table tb_cliente(
+	id int primary key auto_increment,
+    nome varchar(45) ,
+    dataN date,
+    cpf varchar(14),
+    email varchar(100)
+  )*/
+  
+/*create table tb_venda(
+	id int primary key auto_increment,
+    valor decimal(8,2),
+    quantidade int,
+    id_cliente int,
+    foreign key(id_cliente) references tb_cliente(id)
+  )*/
+ /*create table produtos_tem_vendas(
+	id_produtos int not null,
+    id_vendas int not null,
+    foreign key(id_produtos) references tb_produtos(id),
+    foreign key(id_vendas) references tb_venda(id)
+ )*/
+ 
+ /*create table tb_compra(
+	id int primary key auto_increment,
+    valor decimal(8,2),
+    quantidade int
+ )*/
+ 
+ /*create table produtos_tem_compra(
+	id_produtos int not null,
+    id_compra int not null,
+    foreign key(id_produtos) references tb_produtos(id),
+    foreign key(id_compra) references tb_compra(id)
+ )*/

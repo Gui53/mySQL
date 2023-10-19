@@ -1,0 +1,16 @@
+ /*insert into tb_categorias(descricao)values('Cereal'),('Frios'),('Carnes')*/
+
+/*insert into tb_fornecedores(nome)values('FriBoi'),('Machado'),('Nordeste'),('Tirol')*/
+/*insert into tb_produtos(descricao, quantidade, id_categorias)values('Alcatra', '2', '3'),
+('Queijo','3','2'),
+('Arroz', '2', '1')*/
+
+/*insert into produtos_tem_fornecedores(id_produtos, id_fornecedores, valor)values('4', '1', '22.50'),('5', '4', '14.50'),('6', '3', '12.99')*/
+
+/*insert into tb_cliente(nome, dataN, cpf, email)values('Guilherme', '2007-04-26', '150.642.543-43', 'gui@gmail.com'),('Nayara', '2018-05-26', 's/c', 'nay@gmail')*/
+
+/*insert into tb_venda(data, id_cliente)values('2023-08-21', '1'),('2023-08-29', '2')
+insert into tb_compra(data)values('2023-08-21'),('2023-08-29')*/
+
+/*insert into produtos_tem_compra(id_produtos, id_compra, quantidade)values('4', '2', '10'),('6', '1', '2'),('5', '2', '4')*/
+/*insert into produtos_tem_vendas(id_produtos, id_vendas, quantidade, valor)values('4', '1', '6', '14.50')*/

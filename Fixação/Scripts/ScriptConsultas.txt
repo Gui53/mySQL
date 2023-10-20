@@ -1,0 +1,21 @@
+/*select descricao as NomeP, quantidade, valor as ValorUnitário
+from tb_produtos tp, produtos_tem_vendas pv
+where tp.id = pv.id_produtos
+*/
+
+/*select tb_produtos.descricao as Produto, quantidade as Vendidos, valor as ValorUnitário , tb_categorias.descricao as Categorias
+from produtos_tem_vendas 
+inner join tb_produtos on id_produtos = tb_produtos.id
+inner join tb_categorias on id_categorias = tb_categorias.id
+*/
+
+/*select tb_cliente.id as CodigoCliente, nome as Cliente, data as DataCompra, cpf
+from tb_venda
+inner join tb_cliente on id_cliente = tb_cliente.id*/
+
+
+/*select tb_produtos.id as Código, tb_produtos.descricao as Produto, tb_categorias.descricao as Categoria, nome as Fornecedor
+from produtos_tem_fornecedores
+inner join tb_produtos on id_produtos = tb_produtos.id
+inner join tb_categorias on id_categorias = tb_categorias.id
+inner join tb_fornecedores on id_fornecedores = tb_fornecedores.id*/

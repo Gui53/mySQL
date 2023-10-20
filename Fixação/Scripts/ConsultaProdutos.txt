@@ -1,0 +1,9 @@
+/*select descricao, quantidade, valor as ValorUnitário
+from tb_produtos tp, produtos_tem_vendas pv
+where tp.id = pv.id_produtos
+*/
+
+/*select tb_produtos.descricao as Produto, quantidade, valor as ValorUnitário , tb_categorias.descricao as Categorias
+from produtos_tem_vendas pv
+inner join tb_produtos on id_produtos = tb_produtos.id
+inner join tb_categorias on id_categorias = tb_categorias.id*/
